@@ -14,14 +14,20 @@ $ npm i convert-csv
 ``` js
 const csv = require('convert-csv')({
   // There are default values, not necessarily.
-  delimiter, quote, escape
+  // delimiter, quote, escape
 })
 
-const parsed = csv.parse('1,2,3\n4,5,6')
-console.log(parsed)
+let array = [
+['id', 'col1', 'col2'],
+[1, 'foo\n', 'foo,bar'],
+[2, 'foo "foo bar"', 'foo']
+]
 
-const toArray = csv.write(parsed)
-console.log(toArray)
+const toCsv = csv.write(array)
+console.log(toCsv)
+
+const parsed = csv.parse(toCsv)
+console.log(parsed)
 ```
 
 ## Authors

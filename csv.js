@@ -3,7 +3,9 @@
   typeof define === 'function' && define.amd ? define(factory) :
   global.Convert_CSV = factory();
 }(this, function(){
-  const split = '\r\n'
+'use strict'
+
+const split = '\r\n'
 const splitReg = /\r?\n/
 
 
@@ -45,7 +47,6 @@ CSV.prototype.parse = function(string) {
 
     $delimiter === delimiter ? result[result.length - 1].push(item) : result.push([item])
   })
-
   return result
 }
 
