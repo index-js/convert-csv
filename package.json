@@ -1,0 +1,22 @@
+{
+  "name": "convert-csv",
+  "version": "1.0.0",
+  "description": "A Simple CSV Converter",
+  "main": "csv.js",
+  "scripts": {
+    "test": "node csv.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/index-js/convert-csv.git"
+  },
+  "keywords": [
+    "CSV"
+  ],
+  "author": "Yanglin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/index-js/convert-csv/issues"
+  },
+  "homepage": "https://github.com/index-js/convert-csv#readme"
+}
