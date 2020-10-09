@@ -14,7 +14,10 @@ $ npm i convert-csv
 ``` js
 const csv = require('convert-csv')({
   // There are default values, not necessarily.
-  // delimiter, quote, escape
+  // delimiter: ',',
+  // quote: '"',
+  // escape: '"',
+  // trim: true
 })
 
 let array = [
